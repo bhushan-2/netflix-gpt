@@ -2,3 +2,4 @@ export const bgImageURL = "https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-a
 
 export const logoURL = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
  
+export const userIcon = "https://static.vecteezy.com/system/resources/previews/008/506/404/original/contact-person-red-icon-free-png.png";
