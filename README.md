@@ -15,6 +15,8 @@
 - Created Redux Store with userSlice
 - Implemented Sign Out
 - Update Profile
+- Bug Fix when user navigates to browse page without login
+- Unsubscribed the onAuthChange event when header component unmounts
 
 # Features
 - Login/Sign Up
