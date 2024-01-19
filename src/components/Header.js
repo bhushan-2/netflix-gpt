@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { logoURL } from "../utils/constant";
+import { LOGO_URL } from "../utils/constant";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <div className="absolute z-10 bg-transparent bg-gradient-to-b from-black w-screen flex justify-between">
-      <img className="w-40" src={logoURL} alt="logo" />
+      <img className="w-40" src={LOGO_URL} alt="logo" />
       {user && (
         <div className="flex justify-center align-middle">
           <img className="w-6 h-7 my-4" src={user?.photoURL} alt="user-icon" />

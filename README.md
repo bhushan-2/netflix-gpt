@@ -17,6 +17,7 @@
 - Update Profile
 - Bug Fix when user navigates to browse page without login
 - Unsubscribed the onAuthChange event when header component unmounts
+- TMDB account creation and API key usage in application
 
 # Features
 - Login/Sign Up

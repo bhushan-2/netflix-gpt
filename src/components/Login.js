@@ -1,5 +1,5 @@
 import Header from "./Header";
-import { bgImageURL, userIcon } from "../utils/constant";
+import { BG_IMAGE_URL, USR_ICON } from "../utils/constant";
 import { useState, useRef } from "react";
 import { validateData } from "../utils/Validate";
 import {
@@ -38,10 +38,9 @@ const Login = () => {
         email?.current?.value,
         password?.current?.value
       )
-        .then((userCredential) => {
-          const user = userCredential.user;
+        .then(() => {
           updateProfile(auth.currentUser, {
-            displayName: fullName?.current?.value, photoURL: userIcon
+            displayName: fullName?.current?.value, photoURL: USR_ICON
           }).then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;
             dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
@@ -75,7 +74,7 @@ const Login = () => {
   return (
     <div className="absolute w-full">
       <Header />
-      <img className="absolute" src={bgImageURL} alt="background" />
+      <img className="absolute" src={BG_IMAGE_URL} alt="background" />
       <div>
         <form
           onSubmit={(e) => e.preventDefault()}
