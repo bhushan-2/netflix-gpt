@@ -26,6 +26,8 @@
 - Update store with trailer data
 - Embeded the youtube video with autoplay
 - Tailwind CSS
+- Movie List for New Release, Upcoming Movies, Top Rated Movies
+- Custom hooks added for different movie list
 
 # Features
 - Login/Sign Up
