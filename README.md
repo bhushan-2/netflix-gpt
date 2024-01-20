@@ -18,6 +18,14 @@
 - Bug Fix when user navigates to browse page without login
 - Unsubscribed the onAuthChange event when header component unmounts
 - TMDB account creation and API key usage in application
+- Custom hook for now playing movie
+- Create movieSlice
+- Update store with movies data
+- Planning for MainContainer & Secondary Container
+- Fetch data for trailer video
+- Update store with trailer data
+- Embeded the youtube video with autoplay
+- Tailwind CSS
 
 # Features
 - Login/Sign Up
