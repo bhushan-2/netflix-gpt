@@ -5,7 +5,7 @@ const VideoTitle = ({ title, overview }) => {
   return (
     <div className="w-full aspect-video pt-[20%] px-12 absolute top-0 bg-gradient-to-r from-black text-white">
       <div className="font-bold text-3xl">{title}</div>
-      <div className="text-md w-1/4">{overview}</div>
+      <div className="text-md w-1/4 line-clamp-4">{overview}</div>
       <div className="mt-6 flex">
         <button className="flex items-center text-lg bg-white py-2 px-10 rounded-md text-black hover:bg-opacity-50">
           <PlaySVG/>

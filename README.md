@@ -28,6 +28,8 @@
 - Tailwind CSS
 - Movie List for New Release, Upcoming Movies, Top Rated Movies
 - Custom hooks added for different movie list
+- GPT Search Feature
+- Multi-Language Support
 
 # Features
 - Login/Sign Up
