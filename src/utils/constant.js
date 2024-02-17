@@ -23,3 +23,5 @@ export const LANGUAGES = [
   { identifier: "hi", name: "Hindi" },
   { identifier: "es", name: "Spanish" },
 ];
+
+export const OPENAI_API_KEY = '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';

@@ -30,6 +30,9 @@
 - Custom hooks added for different movie list
 - GPT Search Feature
 - Multi-Language Support
+- OpenAI Integration
+- Movie Search with OpenAI
+- Store GPT movie results in redux store
 
 # Features
 - Login/Sign Up
