@@ -33,6 +33,8 @@
 - OpenAI Integration
 - Movie Search with OpenAI
 - Store GPT movie results in redux store
+- API keys in env file for security
+- Memoization of API responses
 
 # Features
 - Login/Sign Up

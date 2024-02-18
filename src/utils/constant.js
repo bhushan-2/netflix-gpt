@@ -12,7 +12,7 @@ export const MOVIE_OPTION = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3Y2I2MjAzNTQwZTFhYTVkOTA0M2Y1MzQ0M2U0MDNjYiIsInN1YiI6IjY1OTE4M2IxNTFhNjRlMDI3MWY0OTJhYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.32v8wpchjD0EzBuxWFLfrKxDOp1oCw0OKhixVzpxWME",
+      "Bearer " + process.env.REACT_APP_TMDB_API_KEY,
   },
 };
 
@@ -24,4 +24,4 @@ export const LANGUAGES = [
   { identifier: "es", name: "Spanish" },
 ];
 
-export const OPENAI_API_KEY = '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';
+export const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
