@@ -7,6 +7,9 @@ import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/configSlice";
+import profileIcon from "../assets/img/profile-icon.jpg";
+import searchIcon from "../assets/img/search-icon.png";
+import homeIcon from "../assets/img/home-icon.png";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -54,13 +57,18 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute z-10 bg-transparent bg-gradient-to-b from-black w-full flex justify-between">
-      <img className="w-40" src={LOGO_URL} alt="logo" />
+    <div className="absolute z-10 bg-transparent bg-gradient-to-b from-black w-full flex flex-col md:flex-row justify-between">
+      <img
+        className="w-40 mx-auto md:mx-0 cursor-pointer"
+        src={LOGO_URL}
+        alt="logo"
+        onClick={handleGptSearch}
+      />
       {user && (
         <div className="flex justify-center align-middle">
           {showGptSearch && (
             <select
-              className="my-2 py-2 mx-2 px-2 h-10 bg-gray-800 text-white rounded-md"
+              className="my-2 py-2 mx-4 px-2 h-10 bg-gray-900 text-white rounded-md"
               onChange={handleLangChange}
             >
               {LANGUAGES.map((lang) => (
@@ -70,13 +78,22 @@ const Header = () => {
               ))}
             </select>
           )}
-          <button
-            className="bg-slate-800 h-10 mx-4 my-2 py-2 px-2 text-white rounded-md"
-            onClick={handleGptSearch}
-          >
-            {showGptSearch ? "Home" : "GPT Search"}
-          </button>
-          <img className="w-6 h-7 my-4" src={user?.photoURL} alt="user-icon" />
+          {showGptSearch ? (
+            ""
+          ) : (
+            <button
+              className="bg-slate-900 flex justify-around w-32 h-10 mx-4 my-2 py-2 px-2 text-white rounded-md"
+              onClick={handleGptSearch}
+            >
+              <img className="w-4 h-4 mt-1" src={searchIcon} alt="" /> GPT
+              Search
+            </button>
+          )}
+          <img
+            className="w-8 h-8 my-3 rounded-sm"
+            src={profileIcon}
+            alt="user-icon"
+          />
           <p className="p-4 text-white cursor-pointer" onClick={handleSignOut}>
             Sign Out
           </p>

@@ -5,7 +5,7 @@ const MovieCard = ({ poster }) => {
   return (
     <div className="">
       <img
-        className="min-w-48 h-40 mr-5 rounded-sm"
+        className="min-w-36 md:min-w-48 h-40 mr-5 rounded-sm"
         src={MOVIE_IMG_CDN + poster}
         alt="movie card"
       />

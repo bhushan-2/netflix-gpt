@@ -18,6 +18,7 @@ const useMovieTrailer = (movieId) => {
       (record) => record.type === "Trailer"
     );
     const trailer = videoList.length === 0 ? json.results[0] : videoList[0];
+    console.log('trailer', trailer);
     dispatch(addTrailerVideo(trailer));
   };
 

@@ -35,6 +35,7 @@
 - Store GPT movie results in redux store
 - API keys in env file for security
 - Memoization of API responses
+- Responsive web design
 
 # Features
 - Login/Sign Up
