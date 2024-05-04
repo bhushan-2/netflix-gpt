@@ -9,7 +9,7 @@ const useUpcomingMovies = () => {
 
   const getUpComingMovies = async () => {
     const data = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=6",
+      "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=2",
       MOVIE_OPTION
     );
     const json = await data.json();

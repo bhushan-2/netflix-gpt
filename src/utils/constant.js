@@ -24,4 +24,4 @@ export const LANGUAGES = [
   { identifier: "es", name: "Spanish" },
 ];
 
-export const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
