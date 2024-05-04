@@ -25,3 +25,5 @@ export const LANGUAGES = [
 ];
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+
+export const imgPoster = "https://image.tmdb.org/t/p/w500/";
